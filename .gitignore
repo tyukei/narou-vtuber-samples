@@ -1,0 +1,12 @@
+# Local environments and generated outputs
+.locals/
+output/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store

@@ -1,0 +1,71 @@
+素材とモデルの権利確認記録（2026-10-04）
+
+採用人物：セオドア・ルーズベルト（1858–1919、第26代米国大統領）。
+フランクリン・D・ルーズベルトとは別人です。
+
+採用録音：
+1. Social and industrial justice（1912年8月、Edison）
+   Library of Congress資料番号99391604
+   https://www.loc.gov/item/99391604/
+2. The Right of the People to Rule（1912年8月、Edison）
+   Library of Congress資料番号99391599
+   https://www.loc.gov/item/99391599/
+
+取得先、ファイルのSHA-256、学習・評価区間はsources.jsonに固定しました。
+取得したのは上記資料を出典としているWikimedia Commonsのコピーです。
+LOCの本体ダウンロードをこの環境から取得できなかったためです。
+新しい朗読者の録音や、現代の音楽を付けた動画は使っていません。
+Commonsの2番のファイル説明は演説日と録音日を混同しているため、
+録音時期は下記LOC解説を優先しました。
+
+米国における根拠：
+・LOCは上記を1912年8月のエジソン社向け本人録音と説明しています。
+  https://www.loc.gov/static/collections/theodore-roosevelt-films/articles-and-essays/sound-recordings-of-theodore-roosevelts-voice/
+・LOC Citizen DJは1890–1929年のEdison社の録音をパブリックドメインと説明しています。
+  https://citizen-dj.labs.loc.gov/loc-edison/use/
+・米国著作権法1401(a)(2)(B)(i)の1923年より前の公表録音に関する
+  保護終了も確認しました。1912年公表録音が該当します。
+  https://www.copyright.gov/title17/92chap14.html
+
+日本で利用する際の確認：
+対象を「1912年公表の原録音」と「1919年没の本人の演説」に限定しました。
+文化庁の保護期間延長Q&Aにより、旧法での実演・レコードの扱い、
+米国の戦時加算（最大3794日）、消滅した権利が2018年の延長で復活
+しないことを確認しています。これらの年代と確認資料から、本実験では
+対象の原録音・演説の保護期間が満了していると判断しました。
+  https://www.bunka.go.jp/seisaku/chosakuken/hokaisei/kantaiheiyo_chosakuken/1411890.html
+この判断を「昭和以前ならすべて自由」「世界中で無条件に自由」という
+一般則にはしません。別の音源を追加する場合は個別に確認します。
+
+デジタルコピー：
+CommonsのSocial音源はPD-US-record-expired表示。Right音源はPD表示
+ですが音声専用でないテンプレートのため、その表示だけには依存せず、
+LOCの原録音の来歴と上記法令を併用しました。両ファイルのページには
+現代の追加実演・新規編集著作物としての別個の権利表示はありません。
+利用者による最終的な法的評価が必要というLOCの一般的な留意事項を、
+「LOCが本実験を保証・公認している」と読み替えていません。
+
+クレジット：
+Theodore Roosevelt, Edison recordings (1912).
+Library of Congress, Motion Picture, Broadcasting and Recorded Sound Division.
+Digital copies retrieved from Wikimedia Commons; see sources.json.
+
+基盤モデルとソフトウェア：
+追加学習に使う対象話者の録音は上記PD素材のみです。ただし、RVCの
+事前学習済みモデルや特徴抽出モデルまで「PDだけで作られている」とは
+主張しません。RVCコードはMIT、配布元lj1995/VoiceConversionWebUIの
+モデルカードもMIT表示です。モデルの配布時にはこの記録とライセンスを
+添付します。RVC READMEは基盤学習にVCTKを使用した旨を説明しています。
+  https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
+  https://huggingface.co/lj1995/VoiceConversionWebUI/blob/e6d0c1a17da07c33557852f9dfa2bd44cc75737d/README.md
+
+試聴用のsynthetic_input.wavはeSpeak NGでローカル生成した独自の例文です。
+モデルの学習には使用していません。変換後も機械生成音声であり、本人の
+実際の発言・肉声復元・公式声明・推薦ではありません。
+
+見送った候補：
+大隈重信（早稲田大学公開資料）は本人の録音を確認できましたが、
+配布サイトの資料使用条件から、本実験の利用を無条件に認められるとは
+判断しませんでした。資料取得・学習には使っていません。
+  https://www.wul.waseda.ac.jp/kosho/ka01/ka01_3764/
+  https://www.waseda.jp/library/user/using-images/

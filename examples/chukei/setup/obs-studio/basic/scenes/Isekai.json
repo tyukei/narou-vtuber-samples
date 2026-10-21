@@ -1,0 +1,15 @@
+{
+  "name": "Isekai",
+  "current_scene": "Avatar",
+  "current_program_scene": "Avatar",
+  "scene_order": [{"name": "Avatar"}],
+  "sources": [{
+    "name": "Avatar",
+    "uuid": "c84e5fe0-7d81-4d02-8542-dc2f17f43d08",
+    "id": "scene",
+    "versioned_id": "scene",
+    "settings": {"items": []},
+    "enabled": true
+  }],
+  "groups": []
+}

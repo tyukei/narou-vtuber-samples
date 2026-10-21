@@ -1,0 +1,48 @@
+[
+  {
+    "id": "social",
+    "filename": "social.mp3",
+    "title": "Social and industrial justice",
+    "recorded": "1912-08",
+    "speaker": "Theodore Roosevelt (1858–1919)",
+    "loc_item": "https://www.loc.gov/item/99391604/",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Social_and_industrial_justice-1912_speech_by_Theodore_Roosevelt.mp3",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Social_and_industrial_justice-1912_speech_by_Theodore_Roosevelt.mp3",
+    "intervals_seconds": {
+      "train": [
+        12,
+        172
+      ],
+      "reference": [
+        182,
+        202
+      ]
+    },
+    "sha256": "87a4319efa606b3cb3ec23a24b10ea9b9cc052a7ff92f6084999f594b0b253f3",
+    "checked_at": "2026-10-04",
+    "rights_record": "RIGHTS.txt"
+  },
+  {
+    "id": "right",
+    "filename": "right.wav",
+    "title": "The Right of the People to Rule",
+    "recorded": "1912-08",
+    "speaker": "Theodore Roosevelt (1858–1919)",
+    "loc_item": "https://www.loc.gov/item/99391599/",
+    "source_page": "https://commons.wikimedia.org/wiki/File:The_Right_of_the_People_to_Rule_(Speech_by_Theodore_Roosevelt).wav",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/The_Right_of_the_People_to_Rule_%28Speech_by_Theodore_Roosevelt%29.wav",
+    "intervals_seconds": {
+      "train": [
+        12,
+        207
+      ],
+      "reference": [
+        217,
+        237
+      ]
+    },
+    "sha256": "ec3312db2cbc74dddc51f3b1cc9b55d98d81efe6c5a0de279eaa979c58ab20b5",
+    "checked_at": "2026-10-04",
+    "rights_record": "RIGHTS.txt"
+  }
+]

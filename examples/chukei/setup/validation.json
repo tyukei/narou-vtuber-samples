@@ -1,0 +1,62 @@
+{
+  "verified_at": "2026-10-05T15:14:51.152941+00:00",
+  "environment": {
+    "os": "Ubuntu 24.04 x86_64",
+    "bash": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)",
+    "audio": "PipeWire 1.0.5 / PulseAudio compatibility",
+    "obs": "32.2.2 Flatpak stable",
+    "vc_client": "official Docker v.1.5.3.13",
+    "docker_image": "dannadori/vcclient@sha256:01ae74a73d2c312a839be77ee9b8ad6c7fc688f7e26f943301a00c531c01ff41",
+    "gpu": "not used; CPU mode"
+  },
+  "static_checks": [
+    "bash -n: passed",
+    "ShellCheck 0.9.0: passed"
+  ],
+  "integration": {
+    "passed": [
+      "dry-run creates no files",
+      "invalid arguments fail before mutation",
+      "help",
+      "setup preserves existing profile and scene files",
+      "VC Client HTML and /info return valid responses",
+      "OBS launches the Isekai profile and Avatar scene",
+      "repeat start reuses OBS and the virtual audio module",
+      "1000Hz tone reaches the virtual microphone (RMS=3720.9)",
+      "stop removes the container and audio sink, and closes OBS",
+      "stop is repeatable and a subsequent start succeeds",
+      "stale module ids do not remove a different audio device"
+    ],
+    "path_contains_spaces": true,
+    "browser_auto_open": false,
+    "tested_port": 18889,
+    "download": "Official Docker image and Flathub package retrieved by their install commands; setup verified with installed packages and cached weights; initial VC Client startup retrieved weights",
+    "rvc_file_inference": {
+      "model": "existing appendix RVC v2 model theodore_roosevelt_1912",
+      "input": "2 seconds of prerecorded speech, 48000Hz mono PCM16",
+      "results": {
+        "responses": 3,
+        "output_samples": [
+          96000,
+          96000,
+          96000
+        ],
+        "rms": [
+          0.0,
+          1088.1553510605306,
+          1143.6897537457073
+        ]
+      },
+      "note": "first response is warm-up silence; later responses contain converted PCM audio"
+    }
+  },
+  "known_limitations": [
+    "Mac native execution not tested",
+    "No physical webcam or live microphone test",
+    "GPU branch not tested",
+    "No v4l2loopback kernel module; virtual camera output not tested",
+    "Default-browser auto-open branch not executed in integration test",
+    "Japanese HuBERT endpoint returned HTTP 401; RVC standard embedding model was tested"
+  ],
+  "cleanup": "Verification containers, OBS processes and virtual audio modules stopped; verification-only Docker image removed to reclaim disk; cached weights retained under ignored .locals/"
+}
