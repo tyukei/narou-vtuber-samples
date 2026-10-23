@@ -22,9 +22,10 @@ for b in rig.data.bones:
 v0.first_person.first_person_bone.bone_name='head'
 v0.meta.title='Pineapple mascot - Kalidoface'
 v0.meta.version='0.2.0'
-v0.meta.author='Sketch owner (sample; replace before distribution)'
-v0.meta.allowed_user_name='OnlyAuthor'
+v0.meta.author='chukei'
+v0.meta.allowed_user_name='Everyone'
 v0.meta.license_name='Redistribution_Prohibited'
+v0.meta.reference='https://github.com/tyukei/narou-vtuber-samples/blob/main/examples/chukei/avatar/USAGE.txt'
 v0.blend_shape_master.blend_shape_groups.clear()
 def group(preset, bindings):
     g=v0.blend_shape_master.blend_shape_groups.add(); g.name=preset; g.preset_name=preset

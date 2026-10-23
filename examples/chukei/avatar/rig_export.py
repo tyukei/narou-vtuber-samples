@@ -44,9 +44,11 @@ for o in parts:
         bind.index=key.name; bind.weight=1.0
 meta=ext.vrm1.meta
 meta.vrm_name='Pineapple sketch mascot'; meta.version='0.1.0'
-meta.authors.add().value='Sketch owner (sample; replace before distribution)'
-meta.avatar_permission='onlyAuthor'; meta.allow_redistribution=False
+meta.authors.add().value='chukei'
+meta.avatar_permission='everyone'; meta.allow_redistribution=False
 meta.modification='allowModification'; meta.commercial_usage='personalNonProfit'
+meta.credit_notation='required'
+meta.other_license_url='https://github.com/tyukei/narou-vtuber-samples/blob/main/examples/chukei/avatar/USAGE.txt'
 rig.show_in_front=True; ad.display_type='STICK'
 bpy.context.view_layer.objects.active=rig
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'pineapple-avatar.blend'))

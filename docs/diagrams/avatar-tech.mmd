@@ -1,0 +1,8 @@
+flowchart TB
+  A["元絵と残したい特徴"] --> B["画像生成ツール<br/>三面図のたたき台"]
+  A --> C["Codex<br/>形を整理してPythonを書く"]
+  B --> C
+  C --> D["Blender MCP<br/>操作をBlenderへ届ける"]
+  D --> E["Blender<br/>メッシュ・骨・表情を作る"]
+  E --> F["VRM用アドオン<br/>骨の役割と利用条件を保存"]
+  F --> G["VRMファイル<br/>対応するアプリへ"]

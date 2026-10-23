@@ -13,8 +13,9 @@ OUT = ROOT / 'output/avatar'
 OUT.mkdir(parents=True, exist_ok=True)
 if bpy.context.scene.get('avatar_created'):
     raise RuntimeError('Already created: use a fresh dedicated scene to rebuild.')
-bpy.ops.object.select_all(action='SELECT')
-bpy.ops.object.delete(use_global=False)
+# Remove starter objects even when their selection is disabled in the UI.
+for obj in list(bpy.context.scene.objects):
+    bpy.data.objects.remove(obj, do_unlink=True)
 bpy.context.scene['avatar_created'] = True
 parts = []
 

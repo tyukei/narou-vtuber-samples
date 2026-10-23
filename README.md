@@ -2,6 +2,10 @@
 
 技術書「なろうVTuberになろう！」のLinux用セットアップ、RVC音声モデル制作、Blenderアバター制作に使うサンプルコードです。原稿中のコマンドと同じパスで実行できるように、`examples/chukei/` 以下の構成を保っています。
 
+## 応用編：仕組み・手順・完成品
+
+[応用編のガイド](docs/README.md)で、音声モデルとアバターの仕組み、フローチャート、再現手順、確認用画像を読めます。[完成品の配布](https://github.com/tyukei/narou-vtuber-samples/releases/tag/advanced-v1)では、学習済み音声モデル・試聴音声・VRMを取得できます。
+
 ## サンプルの取得
 
 Gitを使う場合は、次のコマンドで取得します。
@@ -37,9 +41,9 @@ bash examples/chukei/setup/vtuber.sh setup --dry-run
 
 ## 出力先
 
-音声モデルの作業環境と取得したデータは `.locals/voice-model/`、学習結果は `output/voice-model/` に保存します。アバターの出力先は `output/avatar/` です。Linuxセットアップの既定の保存先は `~/.local/share/isekai-vtuber` です。ダウンロード済みのモデル、録音、生成したVRMやBlenderファイルは、このリポジトリには含めていません。
+音声モデルの作業環境と取得したデータは `.locals/voice-model/`、学習結果は `output/voice-model/` に保存します。アバターの出力先は `output/avatar/` です。Linuxセットアップの既定の保存先は `~/.local/share/isekai-vtuber` です。大きな音声モデルとVRMはGitHub Releasesから別途ダウンロードします。原録音や学習再開用のチェックポイントは配布ZIPに含めません。
 
-アバター制作では制作専用の空のシーンを使います。`build_avatar.py` はシーン内のオブジェクトを削除して制作を始めるため、編集中のシーンでは実行しないでください。元絵・三面図の画像は含めていませんが、配布Pythonにモデルの形状と材質の定義があります。
+アバター制作では制作専用の空のシーンを使います。`build_avatar.py` はシーン内のオブジェクトを削除して制作を始めるため、編集中のシーンでは実行しないでください。元絵・三面図はdocs/imagesにあります。配布Pythonにはモデルの形状と材質の定義があり、同じ掲載モデルを再現できます。
 
 ## 素材と外部ソフトウェア
 

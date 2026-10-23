@@ -1,0 +1,8 @@
+flowchart TB
+  A["1 準備と接続<br/>Blender・VRM・Codex"] --> B["2 設計<br/>元絵から三面図"]
+  B --> C["3 形を作る<br/>正面と側面を確認"]
+  C --> D["4 骨と表情<br/>手足・目・口を動かす"]
+  D --> E["5 VRMを書き出す<br/>読み直して変形を検査"]
+  E --> F["6 アプリで確認<br/>Kalidofaceで追従を見る"]
+  P["完成品を試す<br/>avatar-v1.zip"] --> F
+  S["掲載モデルを再現<br/>Pythonコードを実行"] --> C

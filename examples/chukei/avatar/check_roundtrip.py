@@ -42,7 +42,7 @@ for name in ('blink','aa'):
         obj=bpy.data.objects[bind.node.mesh_object_name]
         key=obj.data.shape_keys.key_blocks[bind.index]
         assert any((a.co-b.co).length>1e-5 for a,b in zip(key.data,obj.data.shape_keys.key_blocks[0].data))
-report={'blender':bpy.app.version_string,'vrm_spec':'1.0','reimport':'FINISHED','mesh_count':len(meshes),'humanoid_bone_count':len(mapping),'required_bones':required,'deformation_displacement_m':movements,'expression_bind_counts':expression_counts,'limits':['No external tracking application tested','Rigid segmented mascot skin; no finger bones','aa is a stretched smile, not a mouth cavity','License metadata is provisional and prohibits redistribution']}
+report={'blender':bpy.app.version_string,'vrm_spec':'1.0','reimport':'FINISHED','mesh_count':len(meshes),'humanoid_bone_count':len(mapping),'required_bones':required,'deformation_displacement_m':movements,'expression_bind_counts':expression_counts,'limits':['No external tracking application tested in this check','Rigid segmented mascot skin; no finger bones','aa is a stretched smile, not a mouth cavity','Personal non-commercial use and local modification permitted; redistribution prohibited; see USAGE.txt']}
 (out/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 bpy.ops.object.select_all(action='DESELECT'); rig.select_set(True); bpy.context.view_layer.objects.active=rig
 rig.pose.bones[mapping['leftLowerArm']].rotation_euler.x=math.radians(60)
